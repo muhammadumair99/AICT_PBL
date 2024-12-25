@@ -1,0 +1,246 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa; 
+    color: #333;
+}
+
+.main-header {
+    background-color:#7020ff; 
+    color: white;
+    padding: 20px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: 1.1rem;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+.search-cart {
+    position: relative;
+    display: inline-block;
+}
+
+.search-cart input {
+    width: 250px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 2px solid #ddd;
+    font-size: 16px;
+    transition: 0.3s ease;
+    height: 10px;
+}
+
+.search-cart input:focus {
+    outline: none;
+    border-color: #7020ff;
+    box-shadow: 0 0 8px rgba(112, 32, 255, 0.5);
+}
+
+.search-cart input::placeholder {
+    color: #aaa;
+}
+
+.search-cart:before {
+   
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.search-cart button, .cart-icon {
+    padding: 5px 10px;
+    background-color: white;
+    color: #7020ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-cart button:hover, .cart-icon:hover {
+    background-color:#26085a;
+    color: white;
+}
+
+
+.main-footer {
+    background-color: #7020ff;
+    color: white;
+    text-align: center;
+    padding: 20px 10%;
+    margin-top: 20px;
+}
+
+.main-footer a {
+    color: #dff0d8;
+    text-decoration: none;
+}
+
+.main-footer a:hover {
+    text-decoration: underline;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slides-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    height: 100%;
+    gap: 10px;
+}
+
+.slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    position: relative;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.slide img:hover {
+    transform: scale(1.05); 
+}
+
+.slide-caption {
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+.btn {
+    background-color: #7020ff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #4CAF50;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 1.5rem;
+    z-index: 2;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: #7020ff;
+}
+
+
+
+
+.best-sellers {
+    padding: 20px 10%;
+    background-color: #ffffff;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.best-sellers h2 {
+    text-align: center;
+    color: #7020ff; 
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-slider {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.product {
+    min-width: 200px;
+    margin: 10px;
+    text-align: center;
+    background-color: #f9f9f9; 
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(112, 32, 255, 0.3); 
+}
+
+.product img {
+    width: 70%;
+    height: 50%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.product:hover img {
+    transform: scale(1.1); 
+}
+
+.product h3 {
+    font-size: 1rem;
+    color: #333; 
+    transition: color 0.3s ease; 
+}
+
+.product:hover h3 {
+    color: #7020ff; 
+}
