@@ -25,33 +25,7 @@ It features responsive design elements, a dynamic layout, and multiple pages suc
 - **Visual Studio Code**
 - **Web Browsers (Chrome, Firefox, Edge)** for testing and display
 
----
 
-## 📂 Folder & File Structure
-
-AICT_PBL/
-│
-├── index.html # Homepage
-├── about.html # About Us page
-├── contact.html # Contact page
-├── products.html # Product listings
-├── cart.html # Shopping cart page
-├── umair.html # Team Member page: Umair
-├── hanaan.html # Team Member page: Hanaan
-├── abdullah.html # Team Member page: Abdullah
-│
-├── style.css # Main styles
-├── about.css # About Us page styles
-├── cart.css # Cart page styles
-├── contact.css # Contact page styles
-├── products.css # Product listing styles
-│
-├── *.jpg / *.png # Images used across the website
-│ ├── Product images (earbuds.jpg, smartwatch.jpg, etc.)
-│ ├── Slider images (a.jpg, b.jpg, etc.)
-│ ├── Icons (search.png, cart.png, social media icons, etc.)
-│
-└── README.md # Project documentation
 
 ---
 
